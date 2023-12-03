@@ -1,0 +1,12 @@
+{{#if auth}}
+
+{{else}}
+{{message}}
+<h2>Entre com seu login!</h2>
+<form action="/User/login" method="post">
+<input type="email" name="login" placeholder="Digite seu endereço de E-mail cadastrado">
+<input type="password" name="senha" placeholder="Digite sua senha ">
+<input type="submit" value="Entrar" />
+</form>
+
+{{/if}}

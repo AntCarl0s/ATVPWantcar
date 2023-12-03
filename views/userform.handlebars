@@ -1,0 +1,51 @@
+{{#if auth}}
+<style>
+    .container{
+        text-align: center;
+        background-color: rgb(207, 207, 207);
+    }
+    .div{
+        text-align: end;
+        }
+</style>
+<div class="container">
+<h1>Cadastro de Veiculos</h1>
+<form action="/Users/save" method="post">
+<div class="col-md-4 ">
+<label for="nome" class="form-label">Nome/modelo do veiculo:</label>
+<input type="text" class="form-control" name="nome">
+</div>
+<div class="col-md-4 ">
+<label for="marca" class="form-label">Marca do veiculo:</label>
+<input type="text" name="marca" class="form-control">
+</div>
+<div class="col-md-4 ">
+<label for="potencia" class="form-label">Potencia do motor:</label>
+<input type="text" class="form-control" name="potencia">
+</div>
+<div class="col-md-4 ">
+<label for="motor" class="form-label"> Tipo do motor:</label>
+<input type="text" class="form-control" name="motor">
+</div>
+<div class="col-md-4 ">
+<label for="cor" class="form-label">Cor do veiculo:</label>
+<input type="text" class="form-control" name="cor">
+</div>
+<div class="col-md-4 ">
+<label for="anodf" class="form-label">Ano de fabricao do veiculo:</label>
+<input type="text" class="form-control" name="anodf">
+</div>
+<br>
+<div class="col-12">
+<button type="submit" class="btn btn-primary">Salvar</button>
+</div>
+</form>
+
+<br>
+<div class="col-3"> 
+<a href="/">Home</a>
+</div>
+</div>
+</div>
+
+{{/if}}

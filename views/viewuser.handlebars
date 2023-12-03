@@ -1,0 +1,21 @@
+{{#if auth}}
+
+<style>
+.container{
+    background-color: rgb(230, 231, 231);
+}
+</style>
+
+<div class="container">
+    <br> <br> <br>
+<h4>Nome do carro: {{user.nome}}</h4>
+<h4>Marca: {{user.marca}}</h4>
+<h4>Potencia: {{user.potencia}}</h4>
+<h4>motor: {{user.motor}}</h4>
+<h4>Cor: {{user.cor}}</h4>
+<h4>Ano de fabrica: {{user.anofabricacao}}</h4>
+</div>
+<br>
+<a href="/">Home</a>
+<a href="/Users/add">Cadastrar veiculo</a>
+{{/if}}
